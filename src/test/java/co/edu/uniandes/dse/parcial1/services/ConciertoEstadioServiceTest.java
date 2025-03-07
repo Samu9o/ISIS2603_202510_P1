@@ -51,7 +51,7 @@ public class ConciertoEstadioServiceTest {
         conciertoExistente.setNombre("Concierto Existente");
         conciertoExistente.setCapacidad(50);
         conciertoExistente.setPresupuesto(1500L);
-        conciertoExistente.setDate(new Date());
+        conciertoExistente.setDate(new Date()); // Hoy
         conciertoExistente.setEstadio(estadio);
         conciertoRepository.save(conciertoExistente);
 

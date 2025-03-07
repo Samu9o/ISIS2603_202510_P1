@@ -19,6 +19,6 @@ public class EstadioEntity extends BaseEntity {
     private int capacidadMaxima;
     @PodamExclude
     @OneToMany(mappedBy = "estadio")
-    private List<ConciertoEntity> conciertos;
-    
+    private List<ConciertoEntity> conciertos= new ArrayList<>();;
+  
 }
